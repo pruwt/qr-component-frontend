@@ -1,0 +1,48 @@
+
+*{
+    background-color:  hsl(212, 45%, 89%);
+    font-family: "Outfit";
+    font-size: 15px;
+}
+section{
+    padding: 100px;
+    padding-left: 250px;
+    padding-right: 250px;
+    display: flex;
+    justify-content: center;
+}
+.qr-wrapper{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 499px;
+    width: 320px;
+    padding: 12;
+    background-color: hsl(0, 0%, 100%);
+}
+.image-container{
+    background-image:url(images/image-qr-code.png);
+    width: 288px;
+    height: 288px;
+    background-size: cover; /  /*since the div background is an image*/   
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+
+}
+.title-text{
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    color: hsl(218, 44%, 22%);
+}
+.body-text{
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: hsl(216, 15%, 48%);
+}
