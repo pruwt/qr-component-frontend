@@ -10,16 +10,16 @@ section{
     padding-right: 250px;
     display: flex;
     justify-content: center;
-}
+    /* max-width: 100%;  section does not exceed screen-width */
+    }
 .qr-wrapper{
     display: flex;
     flex-direction:column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 499px;
-    width: 320px;
-    padding: 10px;
+    max-width: 320px;
+    padding: 16px;
     background-color: hsl(0, 0%, 100%);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -49,4 +49,27 @@ section{
     font-size: 15px;
     text-align: center;
     color: hsl(216, 15%, 48%);
+}
+
+@media  screen and (max-width: 320px) {
+ 
+    section{
+        padding: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+        
+
+    }
+
+    .qr-wrapper{
+        max-width: 100%;
+        /* padding: 24px; */
+    }
+
+    .title-text{
+        font-size: 18px;
+    }
+    .body-text{
+        font-size: 14px;
+    }
 }
